@@ -1,0 +1,31 @@
+{
+  "name": "web3_js_simple_storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ganache": "npx ganache-cli --deterministic",
+    "prettier:solidity": "npx prettier --write contracts/**/*.sol",
+    "solhint": "npx solhint -f table contracts/**/*.sol",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.2.0",
+    "path": "^0.12.7",
+    "solc": "^0.8.11",
+    "validator": "^13.7.0",
+    "web3": "^1.7.0"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.12.2",
+    "husky": "^7.0.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "0.0.5"
+  }
+}
